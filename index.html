@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>ইচ্ছেপূরণ - Fresh & Organic</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1fdf3;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2e8b57;
+    }
+    .tagline {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .product h3 {
+      margin-top: 0;
+      color: #006400;
+    }
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+    }
+    .order-btn {
+      background-color: #2e8b57;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .order-btn:hover {
+      background-color: #256f46;
+    }
+    .section {
+      margin-top: 40px;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button[type="submit"] {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ইচ্ছেপূরণ</h1>
+  <p class="tagline">Bringing the fresh and organic foods to your doors</p>
+
+  <div class="product-grid">
+    <div class="product">
+      <h3>দেশি চাল</h3>
+      <p class="price">৳60/kg</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    <div class="product">
+      <h3>পাকা আম (রাজশাহী)</h3>
+      <p class="price">৳100/kg</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    <div class="product">
+      <h3>দেশি মধু</h3>
+      <p class="price">৳500/500ml</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    <div class="product">
+      <h3>জৈব সবজি প্যাক</h3>
+      <p class="price">৳250/pack</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    <div class="product">
+      <h3>মরিচ গুড়া</h3>
+      <p class="price">৳120/100g</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    <div class="product">
+      <h3>হাতের বানানো আচার</h3>
+      <p class="price">৳150/jar</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    <div class="product">
+      <h3>গুঁড়া দুধ (জৈব)</h3>
+      <p class="price">৳200/250g</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    <div class="product">
+      <h3>মুসুর ডাল</h3>
+      <p class="price">৳90/kg</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    <div class="product">
+      <h3>তাজা দেশি ডিম</h3>
+      <p class="price">৳120/ডজন</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    <div class="product">
+      <h3>পানি শোধিত নারকেল তেল</h3>
+      <p class="price">৳300/500ml</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Order & Payment Options</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="product">Product Name:</label>
+      <input type="text" id="product" name="product" required>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required>
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="payment">
+        <option value="cod">Cash on Delivery</option>
+        <option value="bkash">bKash</option>
+        <option value="nagad">Nagad</option>
+      </select>
+
+      <label for="message">Message (Optional):</label>
+      <textarea id="message" name="message" rows="4" placeholder="Any special instruction..."></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+</body>
+</html>
